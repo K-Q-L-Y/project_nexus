@@ -7,10 +7,12 @@
 // Wi-Fi configuration
 // --------------------------------------------------
 
-const char* WIFI_SSID = "UM-WiFi-Guest";
+const char* WIFI_SSID = "";
 const char* WIFI_PASSWORD = "";
 
-constexpr uint32_t OFFLINE_AFTER_MS = 10000;
+// Sensors publish every 30 seconds. Allow two missed
+// reports before showing a node as offline.
+constexpr uint32_t OFFLINE_AFTER_MS = 90000;
 
 WebServer server(80);
 
