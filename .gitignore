@@ -7,7 +7,6 @@ credentials.*
 secrets.*
 
 # Arduino and editor build output
-sensor_data/
 build/
 dist/
 .vscode/
